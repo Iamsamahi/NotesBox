@@ -4,7 +4,7 @@ import {getallNotes , getNotesById , createANote , deleteANote , updateANote} fr
 
 const router = express.Router(); // will be used to define routes,miiddleware and other server logic.
 
-export default router;
+
 
 
 router.get('/', getallNotes)
@@ -18,5 +18,5 @@ router.put('/:id' , updateANote)
 router.delete('/:id' , deleteANote)
 
 
-
+export default router;
 
